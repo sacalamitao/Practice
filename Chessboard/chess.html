@@ -6,28 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chessboard</title>
     <style>
+        .border{
+            margin: -2px;
+            border: 11vw solid grey;
+            /*box-shadow: 0px 0 20px 20px;*/
+            position: absolute;
+        }
+
         .Board{
-            border: dimgrey;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: calc(4vw);
+            margin: none;
+            position: relative;
+            opacity: 95%;
+            
+            
         }
         .white{
-            width: 50px;
-            height: 50px;
+            width: 10vw;
+            height: 10vh;
             border: none;
-            display: inline-flex;
-            margin: -2px;
             background-color: burlywood;
-            text-align: center;
-            font-size: 30px;
         }
         .black{
             background-color: rgb(130, 84, 0);
+            width: 10vw;
+            height: 10vh;
+            border: none;
         }
 
+        .border img{
+            display: block;
+            top: 35%;
+            left: 36%;
+            width: 25vw;
+            height: 25vh;
+            justify-content: center;
+            position: absolute;
+            opacity: 200%;
+        }
     </style>
 </head>
 <body>
-    <div class="Board">
-        <div>
+    <div class="border">
+        <img src="https://e7.pngegg.com/pngimages/894/291/png-clipart-chess-piece-king-white-and-black-in-chess-chessboard-chess-king-pin.png">
+    
+        <div class="Board">
             <div class="white">&#9820;</div>
             <div class="white black">&#9822;</div>
             <div class="white">&#9821;</div>
@@ -37,7 +63,7 @@
             <div class="white">&#9822;</div>
             <div class="white black">&#9820;</div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white black">&#9823;</div>
             <div class="white">&#9823;</div>
             <div class="white black">&#9823;</div>
@@ -47,7 +73,7 @@
             <div class="white black">&#9823;</div>
             <div class="white">&#9823;</div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white"></div>
             <div class="white black"></div>
             <div class="white"></div>
@@ -57,7 +83,7 @@
             <div class="white"></div>
             <div class="white black"></div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white black"></div>
             <div class="white"></div>
             <div class="white black"></div>
@@ -67,7 +93,7 @@
             <div class="white black"></div>
             <div class="white"></div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white"></div>
             <div class="white black"></div>
             <div class="white"></div>
@@ -77,7 +103,7 @@
             <div class="white"></div>
             <div class="white black"></div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white black"></div>
             <div class="white"></div>
             <div class="white black"></div>
@@ -87,7 +113,7 @@
             <div class="white black"></div>
             <div class="white"></div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white">&#9817;</div>
             <div class="white black">&#9817;</div>
             <div class="white">&#9817;</div>
@@ -97,7 +123,7 @@
             <div class="white">&#9817;</div>
             <div class="white black">&#9817;</div>
         </div>
-        <div>
+        <div class="Board">
             <div class="white black">&#9814;</div>
             <div class="white">&#9816;</div>
             <div class="white black">&#9815;</div>
